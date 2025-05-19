@@ -31,38 +31,28 @@ export function MainNav() {
         </Link>
 
         <div className="hidden md:flex mx-6 items-center space-x-1 lg:space-x-2 flex-1">
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-sm font-medium transition-colors hover:text-blue-600 flex items-center gap-1.5"
-          >
-            <BarChart3 className="h-4 w-4" />
-            Dashboard
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-sm font-medium transition-colors hover:text-blue-600 flex items-center gap-1.5"
-          >
-            Leads
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-sm font-medium transition-colors hover:text-blue-600 flex items-center gap-1.5"
-          >
-            Meetings
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-sm font-medium transition-colors hover:text-blue-600 flex items-center gap-1.5"
-          >
-            Reports
-          </Button>
+          <Link href="/">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-sm font-medium transition-colors hover:text-blue-600 flex items-center gap-1.5"
+            >
+              <BarChart3 className="h-4 w-4" />
+              Dashboard
+            </Button>
+          </Link>
+          <Link href="/all-leads">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-sm font-medium transition-colors hover:text-blue-600 flex items-center gap-1.5"
+            >
+              All Leads
+            </Button>
+          </Link>
         </div>
 
-        <div className="hidden md:flex mx-auto max-w-sm flex-1">
+        {/* <div className="hidden md:flex mx-auto max-w-sm flex-1">
           <div className="relative w-full">
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input
@@ -71,31 +61,31 @@ export function MainNav() {
               className="w-full pl-8 rounded-lg border-gray-200 focus-visible:ring-blue-500 bg-gray-50"
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="flex items-center space-x-3">
-          <Button
+          {/* <Button
             variant="ghost"
             size="icon"
             className="relative text-gray-500 hover:text-blue-600"
           >
             <HelpCircle className="h-5 w-5" />
-          </Button>
-          <Button
+          </Button> */}
+          {/* <Button
             variant="ghost"
             size="icon"
             className="relative text-gray-500 hover:text-blue-600"
           >
             <Bell className="h-5 w-5" />
             <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-red-500"></span>
-          </Button>
-          <Button
+          </Button> */}
+          {/* <Button
             variant="ghost"
             size="icon"
             className="text-gray-500 hover:text-blue-600"
           >
             <Settings className="h-5 w-5" />
-          </Button>
+          </Button> */}
           <div className="h-9 w-9 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white shadow-md">
             <Avatar className="h-8 w-8 border-2 border-white">
               <AvatarImage src="/diverse-avatars.png" />

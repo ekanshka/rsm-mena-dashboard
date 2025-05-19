@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import {
   CalendarDays,
   Star,
@@ -32,7 +33,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 
 export default function Dashboard() {
+  const router = useRouter()
   const [leadsData, setLeadsData] = useState<Lead[]>(initialLeadsData)
+
+  const handleRowDoubleClick = (leadId: string) => {
+    router.push(`/leads/${leadId}`)
+  }
 
   const handleStatusChange = (leadId: string, status: string) => {
     setLeadsData(
@@ -394,14 +400,16 @@ export default function Dashboard() {
                   <TableHead className="min-w-[180px] font-semibold text-white">Email</TableHead>
                   <TableHead className="min-w-[120px] font-semibold text-white">Phone</TableHead>
                   <TableHead className="min-w-[100px] font-semibold text-white">Rating</TableHead>
-                  <TableHead className="min-w-[80px] font-semibold text-white">Actions</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {leadsData.map((lead, index) => (
                   <TableRow
                     key={lead.id}
-                    className={`hover:bg-[#009CDE]/5 group transition-colors ${index % 2 === 0 ? "bg-white" : "bg-white"}`}
+                    className={`hover:bg-[#009CDE]/5 group transition-colors cursor-pointer ${
+                      index % 2 === 0 ? "bg-white" : "bg-white"
+                    }`}
+                    onDoubleClick={() => handleRowDoubleClick(lead.id)}
                   >
                     <TableCell className="font-medium whitespace-nowrap">
                       <div className="truncate max-w-[150px]" title={lead.companyName}>
@@ -472,17 +480,6 @@ export default function Dashboard() {
                           <Star key={i} className="h-4 w-4 fill-[#3F9C35] text-[#3F9C35]" />
                         ))}
                       </div>
-                    </TableCell>
-                    <TableCell>
-                      <Link href={`/leads/${lead.id}`}>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="hover:bg-[#009CDE]/5 hover:text-[#009CDE] hover:border-[#009CDE]/20 group-hover:border-[#009CDE]/30 group-hover:shadow-sm transition-all"
-                        >
-                          View
-                        </Button>
-                      </Link>
                     </TableCell>
                   </TableRow>
                 ))}

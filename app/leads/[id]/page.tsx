@@ -125,8 +125,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
               <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px] opacity-[0.15]"></div>
               <CardHeader className="pb-2 relative">
                 <CardTitle className="text-lg font-semibold flex items-center gap-2">
-                  <div className="h-6 w-6 rounded-full bg-[#3F9C35]/10 flex items-center justify-center">
-                    <User className="h-3 w-3 text-[#3F9C35]" />
+                  <div className="h-6 w-6 rounded-full bg-[#009CDE]/10 flex items-center justify-center">
+                    <User className="h-3 w-3 text-[#009CDE]" />
                   </div>
                   Lead Overview
                 </CardTitle>
@@ -134,8 +134,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
               <CardContent className="relative grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <Calendar className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <Calendar className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Lead Date</p>
@@ -144,8 +144,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <CircleDot className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <CircleDot className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Lead Status</p>
@@ -154,14 +154,14 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <UserCircle className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <UserCircle className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Person Name</p>
                       <div className="font-medium flex items-center gap-2">
                         <Avatar className="h-6 w-6">
-                          <AvatarFallback className="bg-[#3F9C35]/10 text-[#3F9C35] text-xs">
+                          <AvatarFallback className="bg-[#009CDE]/10 text-[#009CDE] text-xs">
                             {currentLead.personName.substring(0, 2).toUpperCase()}
                           </AvatarFallback>
                         </Avatar>
@@ -171,8 +171,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <User className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <User className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Position</p>
@@ -181,8 +181,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <CircleDot className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <CircleDot className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Solution</p>
@@ -191,8 +191,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <MapPin className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <MapPin className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">GEO</p>
@@ -203,8 +203,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <Calendar className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <Calendar className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Meeting Date</p>
@@ -213,8 +213,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <UserCircle className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <UserCircle className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">SDR Owner</p>
@@ -223,8 +223,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <Mail className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <Mail className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Email</p>
@@ -233,8 +233,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <Phone className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <Phone className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Phone</p>
@@ -243,8 +243,8 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="h-9 w-9 rounded-full bg-[#3F9C35]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                      <CircleDot className="h-5 w-5 text-[#3F9C35]" />
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <CircleDot className="h-5 w-5 text-[#009CDE]" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-sm text-muted-foreground">Lead Rating</p>
@@ -259,30 +259,18 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
               </CardContent>
             </Card>
 
-            {/* Notes Card */}
+            {/* Additional Information Card */}
             <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-all duration-300 bg-white relative">
               <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px] opacity-[0.15]"></div>
               <CardHeader className="pb-2 relative">
                 <CardTitle className="text-lg font-semibold flex items-center gap-2">
                   <div className="h-6 w-6 rounded-full bg-[#009CDE]/10 flex items-center justify-center">
-                    <FileText className="h-3 w-3 text-[#009CDE]" />
+                    <Globe className="h-3 w-3 text-[#009CDE]" />
                   </div>
-                  Notes & Additional Information
+                  Additional Information
                 </CardTitle>
               </CardHeader>
               <CardContent className="relative space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
-                    <FileText className="h-5 w-5 text-[#009CDE]" />
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-sm text-muted-foreground">Notes</p>
-                    <div className="p-3 bg-[#009CDE]/5 rounded-lg border border-[#009CDE]/10">
-                      <p className="font-medium">{currentLead.notes || "No notes available"}</p>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="flex items-start gap-4">
                   <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
                     <LinkIcon className="h-5 w-5 text-[#009CDE]" />
@@ -316,6 +304,39 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                     <p className="font-medium text-[#009CDE] hover:underline cursor-pointer">
                       {currentLead.companyLinkedin || "Not available"}
                     </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Notes Card */}
+            <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-all duration-300 bg-white relative mt-8">
+              <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px] opacity-[0.15]"></div>
+              <CardHeader className="pb-2 relative">
+                <CardTitle className="text-lg font-semibold flex items-center gap-2">
+                  <div className="h-6 w-6 rounded-full bg-[#009CDE]/10 flex items-center justify-center">
+                    <FileText className="h-3 w-3 text-[#009CDE]" />
+                  </div>
+                  Notes
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="relative">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-start gap-4">
+                    <div className="h-9 w-9 rounded-full bg-[#009CDE]/10 flex items-center justify-center shadow-sm flex-shrink-0">
+                      <FileText className="h-5 w-5 text-[#009CDE]" />
+                    </div>
+                    <div className="space-y-2 flex-1">
+                      <div className="flex items-center justify-between">
+                        <p className="text-sm text-muted-foreground">Lead Notes</p>
+                        <Button variant="outline" size="sm" className="gap-1 shadow-sm">
+                          <Edit className="h-3 w-3" /> Edit Notes
+                        </Button>
+                      </div>
+                      <div className="p-4 bg-[#009CDE]/5 rounded-lg border border-[#009CDE]/10 min-h-[200px] whitespace-pre-wrap">
+                        <p className="font-medium leading-relaxed">{currentLead.notes || "No notes available. Click 'Edit Notes' to add notes about this lead."}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -367,7 +388,7 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
                 </div>
                 <Button
                   variant="ghost"
-                  className="w-full justify-between text-[#3F9C35] hover:text-[#3F9C35]/80 hover:bg-[#3F9C35]/5 mt-4"
+                  className="w-full justify-between text-[#009CDE] hover:text-[#009CDE]/80 hover:bg-[#009CDE]/5 mt-4"
                 >
                   View all activity
                   <ChevronRight className="h-4 w-4" />
