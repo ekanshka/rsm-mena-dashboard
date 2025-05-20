@@ -25,7 +25,7 @@ export default function AllLeads() {
   const router = useRouter()
   const [leadsData, setLeadsData] = useState<Lead[]>(initialLeadsData)
 
-  const handleRowDoubleClick = (leadId: string) => {
+  const handleRowClick = (leadId: string) => {
     router.push(`/leads/${leadId}`)
   }
 
@@ -152,7 +152,7 @@ export default function AllLeads() {
                     className={`hover:bg-[#009CDE]/5 group transition-colors cursor-pointer ${
                       index % 2 === 0 ? "bg-white" : "bg-white"
                     }`}
-                    onDoubleClick={() => handleRowDoubleClick(lead.id)}
+                    onClick={() => handleRowClick(lead.id)}
                   >
                     <TableCell className="font-medium whitespace-nowrap">
                       <div className="truncate max-w-[150px]" title={lead.companyName}>

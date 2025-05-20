@@ -2,7 +2,7 @@
 
 import { useState, use } from "react"
 import Link from "next/link"
-import { notFound } from "next/navigation"
+import { notFound, useRouter } from "next/navigation"
 import {
   Calendar,
   CircleDot,
@@ -37,6 +37,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export default function LeadPage({ params }: { params: Promise<{ id: string }> }) {
+  const router = useRouter()
   const unwrappedParams = use(params)
   const lead = leadsData.find((lead) => lead.id === unwrappedParams.id)
 
@@ -83,14 +84,13 @@ export default function LeadPage({ params }: { params: Promise<{ id: string }> }
 
           <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex items-center gap-4">
-              <Link href="/">
-                <Button
-                  variant="outline"
-                  className="gap-1 hover:bg-[#009CDE]/10 hover:text-[#009CDE] hover:border-[#009CDE]/20 shadow-sm"
-                >
-                  <ArrowLeft className="h-4 w-4" /> Back
-                </Button>
-              </Link>
+              <Button
+                variant="outline"
+                className="gap-1 hover:bg-[#009CDE]/10 hover:text-[#009CDE] hover:border-[#009CDE]/20 shadow-sm"
+                onClick={() => router.back()}
+              >
+                <ArrowLeft className="h-4 w-4" /> Back
+              </Button>
               <div>
                 <h1 className="text-3xl font-bold text-[#00153D]">
                   {currentLead.companyName}
